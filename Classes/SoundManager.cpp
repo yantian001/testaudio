@@ -59,8 +59,11 @@ void SoundManager::playSound(const std::string sound)
 	}
 	std::string soundpath = (sound);
 	if (soundpath != "")
-	{
-		AudioEngine::play2d(soundpath,false);
+    {
+        AudioProfile profile;
+        profile.name = "BackgroundMusic";
+        profile.maxInstances = 20;
+		AudioEngine::play2d(soundpath,false,m_Volume,&profile);
 	}
 }
 
@@ -78,7 +81,10 @@ void SoundManager::playMusic(const std::string music)
 	std::string musicpath = (music);
 	if ( musicpath != "")
 	{
-		m_CurrentMusicId = AudioEngine::play2d(musicpath,m_LoopMusic,m_Volume);
+        AudioProfile profile;
+        profile.name = "BackgroundMusic";
+        profile.maxInstances = 20;
+		m_CurrentMusicId = AudioEngine::play2d(musicpath,m_LoopMusic,m_Volume,&profile);
 	}
 }
 

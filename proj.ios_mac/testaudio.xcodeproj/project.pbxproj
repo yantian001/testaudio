@@ -64,6 +64,10 @@
 		9AB69DCB1AA6F344008A4E9E /* popup_sliding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9AB69DC61AA6F344008A4E9E /* popup_sliding.mp3 */; };
 		9AB69DCD1AA6F344008A4E9E /* stage_matching.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9AB69DC81AA6F344008A4E9E /* stage_matching.mp3 */; };
 		9AB69DCE1AA6F344008A4E9E /* tower_bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9AB69DC91AA6F344008A4E9E /* tower_bgm.mp3 */; };
+		9AB69DE01AA6FE2B008A4E9E /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AB69DDD1AA6FE2B008A4E9E /* ResourceManager.cpp */; };
+		9AB69E791AA6FE54008A4E9E /* config in Resources */ = {isa = PBXBuildFile; fileRef = 9AB69E751AA6FE54008A4E9E /* config */; };
+		9AB69E7B1AA6FE54008A4E9E /* MonsterBustersBaseResource in Resources */ = {isa = PBXBuildFile; fileRef = 9AB69E771AA6FE54008A4E9E /* MonsterBustersBaseResource */; };
+		9AB69E7C1AA6FE54008A4E9E /* MonsterBustersStageResource in Resources */ = {isa = PBXBuildFile; fileRef = 9AB69E781AA6FE54008A4E9E /* MonsterBustersStageResource */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -160,6 +164,22 @@
 		9AB69DC61AA6F344008A4E9E /* popup_sliding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = popup_sliding.mp3; sourceTree = "<group>"; };
 		9AB69DC81AA6F344008A4E9E /* stage_matching.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stage_matching.mp3; sourceTree = "<group>"; };
 		9AB69DC91AA6F344008A4E9E /* tower_bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tower_bgm.mp3; sourceTree = "<group>"; };
+		9AB69DD01AA6FE2B008A4E9E /* CommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtil.h; sourceTree = "<group>"; };
+		9AB69DD21AA6FE2B008A4E9E /* document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = document.h; sourceTree = "<group>"; };
+		9AB69DD31AA6FE2B008A4E9E /* filestream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filestream.h; sourceTree = "<group>"; };
+		9AB69DD51AA6FE2B008A4E9E /* pow10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pow10.h; sourceTree = "<group>"; };
+		9AB69DD61AA6FE2B008A4E9E /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		9AB69DD71AA6FE2B008A4E9E /* strfunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strfunc.h; sourceTree = "<group>"; };
+		9AB69DD81AA6FE2B008A4E9E /* prettywriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prettywriter.h; sourceTree = "<group>"; };
+		9AB69DD91AA6FE2B008A4E9E /* rapidjson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rapidjson.h; sourceTree = "<group>"; };
+		9AB69DDA1AA6FE2B008A4E9E /* reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
+		9AB69DDB1AA6FE2B008A4E9E /* stringbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringbuffer.h; sourceTree = "<group>"; };
+		9AB69DDC1AA6FE2B008A4E9E /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		9AB69DDD1AA6FE2B008A4E9E /* ResourceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceManager.cpp; sourceTree = "<group>"; };
+		9AB69DDE1AA6FE2B008A4E9E /* ResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceManager.h; sourceTree = "<group>"; };
+		9AB69E751AA6FE54008A4E9E /* config */ = {isa = PBXFileReference; lastKnownFileType = folder; path = config; sourceTree = "<group>"; };
+		9AB69E771AA6FE54008A4E9E /* MonsterBustersBaseResource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MonsterBustersBaseResource; sourceTree = "<group>"; };
+		9AB69E781AA6FE54008A4E9E /* MonsterBustersStageResource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MonsterBustersStageResource; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -281,6 +301,9 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9AB69E751AA6FE54008A4E9E /* config */,
+				9AB69E771AA6FE54008A4E9E /* MonsterBustersBaseResource */,
+				9AB69E781AA6FE54008A4E9E /* MonsterBustersStageResource */,
 				9AB69DC51AA6F344008A4E9E /* level_up.mp3 */,
 				9AB69DC61AA6F344008A4E9E /* popup_sliding.mp3 */,
 				9AB69DC81AA6F344008A4E9E /* stage_matching.mp3 */,
@@ -298,6 +321,10 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9AB69DD01AA6FE2B008A4E9E /* CommonUtil.h */,
+				9AB69DD11AA6FE2B008A4E9E /* json */,
+				9AB69DDD1AA6FE2B008A4E9E /* ResourceManager.cpp */,
+				9AB69DDE1AA6FE2B008A4E9E /* ResourceManager.h */,
 				9AB69DC21AA6F331008A4E9E /* SoundManager.cpp */,
 				9AB69DC31AA6F331008A4E9E /* SoundManager.h */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
@@ -355,6 +382,31 @@
 			name = Icons;
 			path = ios;
 			sourceTree = SOURCE_ROOT;
+		};
+		9AB69DD11AA6FE2B008A4E9E /* json */ = {
+			isa = PBXGroup;
+			children = (
+				9AB69DD21AA6FE2B008A4E9E /* document.h */,
+				9AB69DD31AA6FE2B008A4E9E /* filestream.h */,
+				9AB69DD41AA6FE2B008A4E9E /* internal */,
+				9AB69DD81AA6FE2B008A4E9E /* prettywriter.h */,
+				9AB69DD91AA6FE2B008A4E9E /* rapidjson.h */,
+				9AB69DDA1AA6FE2B008A4E9E /* reader.h */,
+				9AB69DDB1AA6FE2B008A4E9E /* stringbuffer.h */,
+				9AB69DDC1AA6FE2B008A4E9E /* writer.h */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		9AB69DD41AA6FE2B008A4E9E /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				9AB69DD51AA6FE2B008A4E9E /* pow10.h */,
+				9AB69DD61AA6FE2B008A4E9E /* stack.h */,
+				9AB69DD71AA6FE2B008A4E9E /* strfunc.h */,
+			);
+			path = internal;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -464,6 +516,8 @@
 				46880B8119C43A67006E1F66 /* HelloWorld.png in Resources */,
 				46880B7D19C43A67006E1F66 /* CloseSelected.png in Resources */,
 				9AB69DCB1AA6F344008A4E9E /* popup_sliding.mp3 in Resources */,
+				9AB69E791AA6FE54008A4E9E /* config in Resources */,
+				9AB69E7C1AA6FE54008A4E9E /* MonsterBustersStageResource in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
 				521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */,
@@ -471,6 +525,7 @@
 				9AB69DCE1AA6F344008A4E9E /* tower_bgm.mp3 in Resources */,
 				521A8EA919F11F5000D177D7 /* fonts in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
+				9AB69E7B1AA6FE54008A4E9E /* MonsterBustersBaseResource in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
 				9AB69DCA1AA6F344008A4E9E /* level_up.mp3 in Resources */,
@@ -512,6 +567,7 @@
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				9AB69DE01AA6FE2B008A4E9E /* ResourceManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
