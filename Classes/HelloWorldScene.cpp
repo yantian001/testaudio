@@ -86,7 +86,29 @@ bool HelloWorld::init()
 void HelloWorld::playSound(float dt)
 {
 	//unschedule(schedule_selector(HelloWorld::playSound));
+    float rand = CCRANDOM_0_1() * 10;
+    if(rand < 3)
+    {
 	SoundManager::getInstance()->playSound("popup_sliding.mp3");
+    }
+    else if(rand < 6)
+    {
+       SoundManager::getInstance()->playSound("stage_matching.mp3");
+        
+    }
+    else if(rand < 9 )
+    {
+        SoundManager::getInstance()->playSound("popup_sliding.mp3");
+        SoundManager::getInstance()->playSound("stage_matching.mp3");
+    }
+    else
+    {
+        SoundManager::getInstance()->playSound("popup_sliding.mp3");
+        SoundManager::getInstance()->playSound("stage_matching.mp3");
+        SoundManager::getInstance()->playSound("level_up.mp3");
+        SoundManager::getInstance()->playSound("stage_matching.mp3");
+    }
+        
 	//scheduleOnce(schedule_selector(HelloWorld::playSound),CCRANDOM_0_1());
 
 }
