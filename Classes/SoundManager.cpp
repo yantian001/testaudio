@@ -1,6 +1,7 @@
 #include "SoundManager.h"
 #include "AudioEngine.h"
 
+
 using namespace cocos2d::experimental;
 /*
  *	Staic variables
@@ -45,8 +46,7 @@ void SoundManager::destroyInstance()
 
 bool SoundManager::init()
 {
-	/*m_SoundEnabled = UserDefault::getInstance()->getBoolForKey(STT_SOUNDENABLED);
-	m_MusicEnabled = UserDefault::getInstance()->getBoolForKey(STT_MUSICENABLED);*/
+	
 	//SimpleAudioEngine::getInstance()->
 	return true;
 }
@@ -57,9 +57,7 @@ void SoundManager::playSound(const std::string sound)
 	{
 		return;
 	}
-	//std::string soundpath = GETSOUND(sound);
-	std::string soundpath =(sound);
-
+	std::string soundpath = (sound);
 	if (soundpath != "")
 	{
 		AudioEngine::play2d(soundpath,false);
@@ -77,7 +75,6 @@ void SoundManager::playMusic(const std::string music)
 	{
 		return;
 	}
-	//std::string musicpath = GETSOUND(music);
 	std::string musicpath = (music);
 	if ( musicpath != "")
 	{
@@ -121,6 +118,6 @@ void SoundManager::enableMusic(bool enabled)
 void SoundManager::enableSound(bool enabled)
 {
 	m_SoundEnabled = enabled;
-	//UserDefault::getInstance()->setBoolForKey(STT_SOUNDENABLED,m_SoundEnabled);
-	//UserDefault::getInstance()->flush();
+	/*UserDefault::getInstance()->setBoolForKey(STT_SOUNDENABLED,m_SoundEnabled);
+	UserDefault::getInstance()->flush();*/
 }

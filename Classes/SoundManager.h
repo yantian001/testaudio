@@ -14,7 +14,7 @@
 #ifndef __MONSTER_SoundManager_h__
 #define __MONSTER_SoundManager_h__
 #include "cocos2d.h"
-
+#include "ResourceManager.h"
 USING_NS_CC;
 
 

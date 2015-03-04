@@ -1,5 +1,6 @@
 #include "HelloWorldScene.h"
 #include "SoundManager.h"
+#include "CommonUtil.h"
 USING_NS_CC;
 
 Scene* HelloWorld::createScene()
@@ -26,7 +27,7 @@ bool HelloWorld::init()
     {
         return false;
     }
-    
+    ResourceManager::getInstance()->initSounds();
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
@@ -78,7 +79,7 @@ bool HelloWorld::init()
 	SoundManager::getInstance()->playMusic("tower_bgm.mp3");
 
 	
-	schedule(schedule_selector(HelloWorld::playSound),0.2f);
+	schedule(schedule_selector(HelloWorld::playSound),1.f);
     
     return true;
 }
@@ -87,28 +88,11 @@ void HelloWorld::playSound(float dt)
 {
 	//unschedule(schedule_selector(HelloWorld::playSound));
     float rand = CCRANDOM_0_1() * 10;
-    if(rand < 3)
-    {
-	SoundManager::getInstance()->playSound("popup_sliding.mp3");
-    }
-    else if(rand < 6)
-    {
-       SoundManager::getInstance()->playSound("stage_matching.mp3");
-        
-    }
-    else if(rand < 9 )
-    {
-        SoundManager::getInstance()->playSound("popup_sliding.mp3");
-        SoundManager::getInstance()->playSound("stage_matching.mp3");
-    }
-    else
-    {
-        SoundManager::getInstance()->playSound("popup_sliding.mp3");
-        SoundManager::getInstance()->playSound("stage_matching.mp3");
-        SoundManager::getInstance()->playSound("level_up.mp3");
-        SoundManager::getInstance()->playSound("stage_matching.mp3");
-    }
-        
+   for (int i =0 ; i<rand ; i++)
+   {
+	   SoundManager::getInstance()->playSound(ResourceManager::getInstance()->getRandomSounds());
+   }
+    
 	//scheduleOnce(schedule_selector(HelloWorld::playSound),CCRANDOM_0_1());
 
 }
